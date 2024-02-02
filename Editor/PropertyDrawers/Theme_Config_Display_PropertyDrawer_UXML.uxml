@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
+    <ui:VisualElement name="VisualElement" view-data-key="config-display" style="flex-grow: 0;">
+        <ui:VisualElement name="CoreSection" style="flex-grow: 0; margin-bottom: 9px;">
+            <ui:VisualElement name="CoreSectionPropertyHolder" style="flex-grow: 1;">
+                <ui:ListView focusable="true" virtualization-method="DynamicHeight" show-bound-collection-size="false" show-add-remove-footer="false" show-border="true" name="CoreSectionPropertyHolderListView" show-foldout-header="true" header-title="Core" tooltip="These values are used across your app and theme utilities. If you need to add custom plugins, this is where they should go." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CompilationSection" style="flex-grow: 0; margin-bottom: 9px;">
+            <ui:VisualElement name="CompilationSectionPropertyHolder" style="flex-grow: 1;">
+                <ui:ListView focusable="true" virtualization-method="DynamicHeight" show-bound-collection-size="false" fixed-item-height="22" show-border="true" reorderable="true" show-add-remove-footer="false" show-alternating-row-backgrounds="None" name="CompilationSectionPropertyHolderListView" show-foldout-header="true" header-title="Compilation" tooltip="These control how the USS files are generated and purged." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="UtilitySection" style="flex-grow: 0;">
+            <ui:VisualElement name="UtilitiesSectionPropertyHolder" style="flex-grow: 1;">
+                <ui:ListView focusable="true" virtualization-method="DynamicHeight" show-bound-collection-size="false" fixed-item-height="22" show-border="true" reorderable="false" show-add-remove-footer="false" show-alternating-row-backgrounds="None" name="UtilitiesSectionPropertyHolderListView" show-foldout-header="true" header-title="Utilities" tooltip="These settings determine which utility classes are generated." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

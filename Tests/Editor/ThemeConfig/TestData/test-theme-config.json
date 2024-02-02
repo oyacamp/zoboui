@@ -1,0 +1,3146 @@
+{
+  "core": {
+    "prefix": "",
+    "modifierSeparator": "_",
+    "modifiers": {
+      "hover": {
+        "value": "{{generated_class}}:hover"
+      },
+      "focus": {
+        "value": "{{generated_class}}:focus"
+      },
+      "checked": {
+        "value": "{{generated_class}}:checked"
+      },
+      "disabled": {
+        "value": "{{generated_class}}:disabled"
+      },
+      "enabled": {
+        "value": "{{generated_class}}:enabled"
+      },
+      "active": {
+        "value": "{{generated_class}}:active"
+      },
+      "inactive": {
+        "value": "{{generated_class}}:inactive"
+      }
+    },
+    "colors": {
+      "transparent": {
+        "value": {
+          "DEFAULT": "rgba(0, 0, 0, 0)"
+        },
+        "uss": {}
+      },
+      "slate": {
+        "value": {
+          "50": "#F8FAFC",
+          "100": "#F1F5F9",
+          "200": "#E2E8F0",
+          "300": "#CBD5E1",
+          "400": "#94A3B8",
+          "500": "#64748B",
+          "600": "#475569",
+          "700": "#334155",
+          "800": "#1E293B",
+          "900": "#0F172A",
+          "950": "#020617"
+        },
+        "uss": {}
+      },
+      "gray": {
+        "value": {
+          "50": "#F9FAFB",
+          "100": "#F3F4F6",
+          "200": "#E5E7EB",
+          "300": "#D1D5DB",
+          "400": "#9CA3AF",
+          "500": "#6B7280",
+          "600": "#4B5563",
+          "700": "#374151",
+          "800": "#1F2937",
+          "900": "#111827",
+          "950": "#030712"
+        },
+        "uss": {}
+      },
+      "zinc": {
+        "value": {
+          "50": "#FAFAFA",
+          "100": "#F4F4F5",
+          "200": "#E4E4E7",
+          "300": "#D4D4D8",
+          "400": "#A1A1AA",
+          "500": "#71717A",
+          "600": "#52525B",
+          "700": "#3F3F46",
+          "800": "#27272A",
+          "900": "#18181B",
+          "950": "#09090B"
+        },
+        "uss": {}
+      },
+      "neutral": {
+        "value": {
+          "50": "#FAFAFA",
+          "100": "#F5F5F5",
+          "200": "#E5E5E5",
+          "300": "#D4D4D4",
+          "400": "#A3A3A3",
+          "500": "#737373",
+          "600": "#525252",
+          "700": "#404040",
+          "800": "#262626",
+          "900": "#171717",
+          "950": "#0A0A0A"
+        },
+        "uss": {}
+      },
+      "stone": {
+        "value": {
+          "50": "#FAFAF9",
+          "100": "#F5F5F4",
+          "200": "#E7E5E4",
+          "300": "#D6D3D1",
+          "400": "#A8A29E",
+          "500": "#78716C",
+          "600": "#57534E",
+          "700": "#44403C",
+          "800": "#292524",
+          "900": "#1C1917",
+          "950": "#0C0A09"
+        },
+        "uss": {}
+      },
+      "red": {
+        "value": {
+          "50": "#FEF2F2",
+          "100": "#FEE2E2",
+          "200": "#FECACA",
+          "300": "#FCA5A5",
+          "400": "#F87171",
+          "500": "#EF4444",
+          "600": "#DC2626",
+          "700": "#B91C1C",
+          "800": "#991B1B",
+          "900": "#7F1D1D",
+          "950": "#450A0A"
+        },
+        "uss": {}
+      },
+      "orange": {
+        "value": {
+          "50": "#FFF7ED",
+          "100": "#FFEDD5",
+          "200": "#FED7AA",
+          "300": "#FDBA74",
+          "400": "#FB923C",
+          "500": "#F97316",
+          "600": "#EA580C",
+          "700": "#C2410C",
+          "800": "#9A3412",
+          "900": "#7C2D12",
+          "950": "#431407"
+        },
+        "uss": {}
+      },
+      "amber": {
+        "value": {
+          "50": "#FFFBEB",
+          "100": "#FEF3C7",
+          "200": "#FDE68A",
+          "300": "#FCD34D",
+          "400": "#FBBF24",
+          "500": "#F59E0B",
+          "600": "#D97706",
+          "700": "#B45309",
+          "800": "#92400E",
+          "900": "#78350F",
+          "950": "#451A03"
+        },
+        "uss": {}
+      },
+      "yellow": {
+        "value": {
+          "50": "#FEFCE8",
+          "100": "#FEF9C3",
+          "200": "#FEF08A",
+          "300": "#FDE047",
+          "400": "#FACC15",
+          "500": "#EAB308",
+          "600": "#CA8A04",
+          "700": "#A16207",
+          "800": "#854D0E",
+          "900": "#713F12",
+          "950": "#422006"
+        },
+        "uss": {}
+      },
+      "lime": {
+        "value": {
+          "50": "#F7FEE7",
+          "100": "#ECFCCB",
+          "200": "#D9F99D",
+          "300": "#BEF264",
+          "400": "#A3E635",
+          "500": "#84CC16",
+          "600": "#65A30D",
+          "700": "#4D7C0F",
+          "800": "#3F6212",
+          "900": "#365314",
+          "950": "#1A2E05"
+        },
+        "uss": {}
+      },
+      "green": {
+        "value": {
+          "50": "#F0FDF4",
+          "100": "#DCFCE7",
+          "200": "#BBF7D0",
+          "300": "#86EFAC",
+          "400": "#4ADE80",
+          "500": "#22C55E",
+          "600": "#16A34A",
+          "700": "#15803D",
+          "800": "#166534",
+          "900": "#14532D",
+          "950": "#052E16"
+        },
+        "uss": {}
+      },
+      "emerald": {
+        "value": {
+          "50": "#ECFDF5",
+          "100": "#D1FAE5",
+          "200": "#A7F3D0",
+          "300": "#6EE7B7",
+          "400": "#34D399",
+          "500": "#10B981",
+          "600": "#059669",
+          "700": "#047857",
+          "800": "#065F46",
+          "900": "#064E3B",
+          "950": "#022C22"
+        },
+        "uss": {}
+      },
+      "teal": {
+        "value": {
+          "50": "#F0FDFA",
+          "100": "#CCFBF1",
+          "200": "#99F6E4",
+          "300": "#5EEAD4",
+          "400": "#2DD4BF",
+          "500": "#14B8A6",
+          "600": "#0D9488",
+          "700": "#0F766E",
+          "800": "#115E59",
+          "900": "#134E4A",
+          "950": "#042F2E"
+        },
+        "uss": {}
+      },
+      "cyan": {
+        "value": {
+          "50": "#ECFEFF",
+          "100": "#CFFAFE",
+          "200": "#A5F3FC",
+          "300": "#67E8F9",
+          "400": "#22D3EE",
+          "500": "#06B6D4",
+          "600": "#0891B2",
+          "700": "#0E7490",
+          "800": "#155E75",
+          "900": "#164E63",
+          "950": "#083344"
+        },
+        "uss": {}
+      },
+      "sky": {
+        "value": {
+          "50": "#F0F9FF",
+          "100": "#E0F2FE",
+          "200": "#BAE6FD",
+          "300": "#7DD3FC",
+          "400": "#38BDF8",
+          "500": "#0EA5E9",
+          "600": "#0284C7",
+          "700": "#0369A1",
+          "800": "#075985",
+          "900": "#0C4A6E",
+          "950": "#082F49"
+        },
+        "uss": {}
+      },
+      "blue": {
+        "value": {
+          "50": "#EFF6FF",
+          "100": "#DBEAFE",
+          "200": "#BFDBFE",
+          "300": "#93C5FD",
+          "400": "#60A5FA",
+          "500": "#3B82F6",
+          "600": "#2563EB",
+          "700": "#1D4ED8",
+          "800": "#1E40AF",
+          "900": "#1E3A8A",
+          "950": "#172554"
+        },
+        "uss": {}
+      },
+      "indigo": {
+        "value": {
+          "50": "#EEF2FF",
+          "100": "#E0E7FF",
+          "200": "#C7D2FE",
+          "300": "#A5B4FC",
+          "400": "#818CF8",
+          "500": "#6366F1",
+          "600": "#4F46E5",
+          "700": "#4338CA",
+          "800": "#3730A3",
+          "900": "#312E81",
+          "950": "#1E1B4B"
+        },
+        "uss": {}
+      },
+      "violet": {
+        "value": {
+          "50": "#F5F3FF",
+          "100": "#EDE9FE",
+          "200": "#DDD6FE",
+          "300": "#C4B5FD",
+          "400": "#A78BFA",
+          "500": "#8B5CF6",
+          "600": "#7C3AED",
+          "700": "#6D28D9",
+          "800": "#5B21B6",
+          "900": "#4C1D95",
+          "950": "#2E1065"
+        },
+        "uss": {}
+      },
+      "purple": {
+        "value": {
+          "50": "#FAF5FF",
+          "100": "#F3E8FF",
+          "200": "#E9D5FF",
+          "300": "#D8B4FE",
+          "400": "#C084FC",
+          "500": "#A855F7",
+          "600": "#9333EA",
+          "700": "#7E22CE",
+          "800": "#6B21A8",
+          "900": "#581C87",
+          "950": "#3B0764"
+        },
+        "uss": {}
+      },
+      "fuchsia": {
+        "value": {
+          "50": "#FDF4FF",
+          "100": "#FAE8FF",
+          "200": "#F5D0FE",
+          "300": "#F0ABFC",
+          "400": "#E879F9",
+          "500": "#D946EF",
+          "600": "#C026D3",
+          "700": "#A21CAF",
+          "800": "#86198F",
+          "900": "#701A75",
+          "950": "#4A044E"
+        },
+        "uss": {}
+      },
+      "pink": {
+        "value": {
+          "50": "#FDF2F8",
+          "100": "#FCE7F3",
+          "200": "#FBCFE8",
+          "300": "#F9A8D4",
+          "400": "#F472B6",
+          "500": "#EC4899",
+          "600": "#DB2777",
+          "700": "#BE185D",
+          "800": "#9D174D",
+          "900": "#831843",
+          "950": "#500724"
+        },
+        "uss": {}
+      },
+      "rose": {
+        "value": {
+          "50": "#FFF1F2",
+          "100": "#FFE4E6",
+          "200": "#FECDD3",
+          "300": "#FDA4AF",
+          "400": "#FB7185",
+          "500": "#F43F5E",
+          "600": "#E11D48",
+          "700": "#BE123C",
+          "800": "#9F1239",
+          "900": "#881337",
+          "950": "#4C0519"
+        },
+        "uss": {}
+      }
+    },
+    "spacing": {
+      "0": {
+        "value": "0px",
+        "uss": {}
+      },
+      "1": {
+        "value": "4px",
+        "uss": {}
+      },
+      "2": {
+        "value": "8px",
+        "uss": {}
+      },
+      "3": {
+        "value": "12px",
+        "uss": {}
+      },
+      "4": {
+        "value": "16px",
+        "uss": {}
+      },
+      "5": {
+        "value": "20px",
+        "uss": {}
+      },
+      "6": {
+        "value": "24px",
+        "uss": {}
+      },
+      "7": {
+        "value": "28px",
+        "uss": {}
+      },
+      "8": {
+        "value": "32px",
+        "uss": {}
+      },
+      "9": {
+        "value": "36px",
+        "uss": {}
+      },
+      "10": {
+        "value": "40px",
+        "uss": {}
+      },
+      "11": {
+        "value": "44px",
+        "uss": {}
+      },
+      "12": {
+        "value": "48px",
+        "uss": {}
+      },
+      "14": {
+        "value": "56px",
+        "uss": {}
+      },
+      "16": {
+        "value": "64px",
+        "uss": {}
+      },
+      "20": {
+        "value": "80px",
+        "uss": {}
+      },
+      "24": {
+        "value": "96px",
+        "uss": {}
+      },
+      "28": {
+        "value": "112px",
+        "uss": {}
+      },
+      "32": {
+        "value": "128px",
+        "uss": {}
+      },
+      "36": {
+        "value": "144px",
+        "uss": {}
+      },
+      "40": {
+        "value": "160px",
+        "uss": {}
+      },
+      "44": {
+        "value": "176px",
+        "uss": {}
+      },
+      "48": {
+        "value": "192px",
+        "uss": {}
+      },
+      "52": {
+        "value": "208px",
+        "uss": {}
+      },
+      "56": {
+        "value": "224px",
+        "uss": {}
+      },
+      "60": {
+        "value": "240px",
+        "uss": {}
+      },
+      "64": {
+        "value": "256px",
+        "uss": {}
+      },
+      "72": {
+        "value": "288px",
+        "uss": {}
+      },
+      "80": {
+        "value": "320px",
+        "uss": {}
+      },
+      "96": {
+        "value": "384px",
+        "uss": {}
+      },
+      "px": {
+        "value": "1px",
+        "uss": {}
+      },
+      "0point5": {
+        "value": "2px",
+        "uss": {}
+      },
+      "1point5": {
+        "value": "6px",
+        "uss": {}
+      },
+      "2point5": {
+        "value": "10px",
+        "uss": {}
+      },
+      "3point5": {
+        "value": "14px",
+        "uss": {}
+      }
+    },
+    "negativeSpacing": {
+      "minus-0": {
+        "value": "0px",
+        "uss": {}
+      },
+      "minus-1": {
+        "value": "-4px",
+        "uss": {}
+      },
+      "minus-2": {
+        "value": "-8px",
+        "uss": {}
+      },
+      "minus-3": {
+        "value": "-12px",
+        "uss": {}
+      },
+      "minus-4": {
+        "value": "-16px",
+        "uss": {}
+      },
+      "minus-5": {
+        "value": "-20px",
+        "uss": {}
+      },
+      "minus-6": {
+        "value": "-24px",
+        "uss": {}
+      },
+      "minus-7": {
+        "value": "-28px",
+        "uss": {}
+      },
+      "minus-8": {
+        "value": "-32px",
+        "uss": {}
+      },
+      "minus-9": {
+        "value": "-36px",
+        "uss": {}
+      },
+      "minus-10": {
+        "value": "-40px",
+        "uss": {}
+      },
+      "minus-11": {
+        "value": "-44px",
+        "uss": {}
+      },
+      "minus-12": {
+        "value": "-48px",
+        "uss": {}
+      },
+      "minus-14": {
+        "value": "-56px",
+        "uss": {}
+      },
+      "minus-16": {
+        "value": "-64px",
+        "uss": {}
+      },
+      "minus-20": {
+        "value": "-80px",
+        "uss": {}
+      },
+      "minus-24": {
+        "value": "-96px",
+        "uss": {}
+      },
+      "minus-28": {
+        "value": "-112px",
+        "uss": {}
+      },
+      "minus-32": {
+        "value": "-128px",
+        "uss": {}
+      },
+      "minus-36": {
+        "value": "-144px",
+        "uss": {}
+      },
+      "minus-40": {
+        "value": "-160px",
+        "uss": {}
+      },
+      "minus-44": {
+        "value": "-176px",
+        "uss": {}
+      },
+      "minus-48": {
+        "value": "-192px",
+        "uss": {}
+      },
+      "minus-52": {
+        "value": "-208px",
+        "uss": {}
+      },
+      "minus-56": {
+        "value": "-224px",
+        "uss": {}
+      },
+      "minus-60": {
+        "value": "-240px",
+        "uss": {}
+      },
+      "minus-64": {
+        "value": "-256px",
+        "uss": {}
+      },
+      "minus-72": {
+        "value": "-288px",
+        "uss": {}
+      },
+      "minus-80": {
+        "value": "-320px",
+        "uss": {}
+      },
+      "minus-96": {
+        "value": "-384px",
+        "uss": {}
+      },
+      "minus-px": {
+        "value": "-1px",
+        "uss": {}
+      },
+      "minus-0point5": {
+        "value": "-2px",
+        "uss": {}
+      },
+      "minus-1point5": {
+        "value": "-6px",
+        "uss": {}
+      },
+      "minus-2point5": {
+        "value": "-10px",
+        "uss": {}
+      },
+      "minus-3point5": {
+        "value": "-14px",
+        "uss": {}
+      }
+    },
+    "plugins": {},
+    "customUss": ""
+  },
+  "utilities": {
+    "alignContent": {
+      "data": {
+        "start": {
+          "value": "flex-start",
+          "uss": {}
+        },
+        "center": {
+          "value": "center",
+          "uss": {}
+        },
+        "end": {
+          "value": "flex-end",
+          "uss": {}
+        },
+        "stretch": {
+          "value": "stretch",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "content": {
+          "properties": ["align-content"]
+        }
+      }
+    },
+    "alignItems": {
+      "data": {
+        "start": {
+          "value": "flex-start",
+          "uss": {}
+        },
+        "center": {
+          "value": "center",
+          "uss": {}
+        },
+        "end": {
+          "value": "flex-end",
+          "uss": {}
+        },
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        },
+        "stretch": {
+          "value": "stretch",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "items": {
+          "properties": ["align-items"]
+        }
+      }
+    },
+    "alignSelf": {
+      "data": {
+        "start": {
+          "value": "flex-start",
+          "uss": {}
+        },
+        "center": {
+          "value": "center",
+          "uss": {}
+        },
+        "end": {
+          "value": "flex-end",
+          "uss": {}
+        },
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        },
+        "stretch": {
+          "value": "stretch",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "self": {
+          "properties": ["align-self"]
+        }
+      }
+    },
+    "backgroundColor": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": ["hover", "focus", "checked"],
+      "extendFields": ["core.colors"],
+      "tagPropertyMap": {
+        "bg": {
+          "properties": ["background-color"]
+        }
+      }
+    },
+    "backgroundImage": {
+      "data": {
+        "none": {
+          "value": "none",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": ["hover"],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "bg": {
+          "properties": ["background-image"]
+        }
+      }
+    },
+    "backgroundImageTintColor": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": ["hover"],
+      "extendFields": ["core.colors"],
+      "tagPropertyMap": {
+        "bg-tint": {
+          "properties": ["-unity-background-image-tint-color"]
+        }
+      }
+    },
+    "backgroundPosition": {
+      "data": {
+        "bottom": {
+          "value": "bottom",
+          "uss": {}
+        },
+        "center": {
+          "value": "center",
+          "uss": {}
+        },
+        "left": {
+          "value": "left",
+          "uss": {}
+        },
+        "left-bottom": {
+          "value": "left bottom",
+          "uss": {}
+        },
+        "left-top": {
+          "value": "left top",
+          "uss": {}
+        },
+        "right": {
+          "value": "right",
+          "uss": {}
+        },
+        "right-bottom": {
+          "value": "right bottom",
+          "uss": {}
+        },
+        "right-top": {
+          "value": "right top",
+          "uss": {}
+        },
+        "top": {
+          "value": "top",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "bg": {
+          "properties": ["background-position"]
+        }
+      }
+    },
+    "backgroundRepeat": {
+      "data": {
+        "repeat": {
+          "value": "repeat",
+          "uss": {}
+        },
+        "no-repeat": {
+          "value": "no-repeat",
+          "uss": {}
+        },
+        "repeat-x": {
+          "value": "repeat-x",
+          "uss": {}
+        },
+        "repeat-y": {
+          "value": "repeat-y",
+          "uss": {}
+        },
+        "repeat-space": {
+          "value": "space",
+          "uss": {}
+        },
+        "repeat-round": {
+          "value": "round",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "bg": {
+          "properties": ["background-repeat"]
+        }
+      }
+    },
+    "backgroundScaleMode": {
+      "data": {
+        "stretch": {
+          "value": "stretch-to-fill",
+          "uss": {}
+        },
+        "crop": {
+          "value": "scale-and-crop",
+          "uss": {}
+        },
+        "fit": {
+          "value": "scale-to-fit",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "bg-scale": {
+          "properties": ["-unity-background-scale-mode"]
+        }
+      }
+    },
+    "backgroundSize": {
+      "data": {
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        },
+        "cover": {
+          "value": "cover",
+          "uss": {}
+        },
+        "contain": {
+          "value": "contain",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "bg": {
+          "properties": ["background-size"]
+        }
+      }
+    },
+    "borderColor": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": ["hover", "focus", "checked"],
+      "extendFields": ["core.colors"],
+      "tagPropertyMap": {
+        "border": {
+          "properties": ["border-color"]
+        }
+      }
+    },
+    "borderRadius": {
+      "data": {
+        "none": {
+          "value": "0",
+          "uss": {}
+        },
+        "sm": {
+          "value": "2px",
+          "uss": {}
+        },
+        "DEFAULT": {
+          "value": "4px",
+          "uss": {}
+        },
+        "md": {
+          "value": "6px",
+          "uss": {}
+        },
+        "lg": {
+          "value": "8px",
+          "uss": {}
+        },
+        "xl": {
+          "value": "12px",
+          "uss": {}
+        },
+        "2xl": {
+          "value": "16px",
+          "uss": {}
+        },
+        "3xl": {
+          "value": "24px",
+          "uss": {}
+        },
+        "full": {
+          "value": "9999px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "rounded": {
+          "properties": ["border-radius"]
+        },
+        "rounded-t": {
+          "properties": ["border-top-left-radius", "border-top-right-radius"]
+        },
+        "rounded-r": {
+          "properties": [
+            "border-top-right-radius",
+            "border-bottom-right-radius"
+          ]
+        },
+        "rounded-b": {
+          "properties": [
+            "border-bottom-right-radius",
+            "border-bottom-left-radius"
+          ]
+        },
+        "rounded-l": {
+          "properties": ["border-top-left-radius", "border-bottom-left-radius"]
+        },
+        "rounded-tl": {
+          "properties": ["border-top-left-radius"]
+        },
+        "rounded-tr": {
+          "properties": ["border-top-right-radius"]
+        },
+        "rounded-br": {
+          "properties": ["border-bottom-right-radius"]
+        },
+        "rounded-bl": {
+          "properties": ["border-bottom-left-radius"]
+        }
+      }
+    },
+    "borderWidth": {
+      "data": {
+        "0": {
+          "value": "0px",
+          "uss": {}
+        },
+        "2": {
+          "value": "2px",
+          "uss": {}
+        },
+        "4": {
+          "value": "4px",
+          "uss": {}
+        },
+        "8": {
+          "value": "8px",
+          "uss": {}
+        },
+        "DEFAULT": {
+          "value": "1px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "border": {
+          "properties": ["border-width"]
+        },
+        "border-t": {
+          "properties": ["border-top-width"]
+        },
+        "border-r": {
+          "properties": ["border-right-width"]
+        },
+        "border-b": {
+          "properties": ["border-bottom-width"]
+        },
+        "border-l": {
+          "properties": ["border-left-width"]
+        }
+      }
+    },
+    "cursor": {
+      "data": {
+        "arrow": {
+          "value": "arrow",
+          "uss": {}
+        },
+        "text": {
+          "value": "text",
+          "uss": {}
+        },
+        "resize-vertical": {
+          "value": "resize-vertical",
+          "uss": {}
+        },
+        "resize-horizontal": {
+          "value": "resize-horizontal",
+          "uss": {}
+        },
+        "link": {
+          "value": "link",
+          "uss": {}
+        },
+        "slide-arrow": {
+          "value": "slide-arrow",
+          "uss": {}
+        },
+        "resize-up-right": {
+          "value": "resize-up-right",
+          "uss": {}
+        },
+        "resize-up-left": {
+          "value": "resize-up-left",
+          "uss": {}
+        },
+        "move-arrow": {
+          "value": "move-arrow",
+          "uss": {}
+        },
+        "rotate-arrow": {
+          "value": "rotate-arrow",
+          "uss": {}
+        },
+        "scale-arrow": {
+          "value": "scale-arrow",
+          "uss": {}
+        },
+        "arrow-plus": {
+          "value": "arrow-plus",
+          "uss": {}
+        },
+        "arrow-minus": {
+          "value": "arrow-minus",
+          "uss": {}
+        },
+        "pan": {
+          "value": "pan",
+          "uss": {}
+        },
+        "orbit": {
+          "value": "orbit",
+          "uss": {}
+        },
+        "zoom": {
+          "value": "zoom",
+          "uss": {}
+        },
+        "fps": {
+          "value": "fps",
+          "uss": {}
+        },
+        "split-resize-up-down": {
+          "value": "split-resize-up-down",
+          "uss": {}
+        },
+        "split-resize-left-right": {
+          "value": "split-resize-left-right",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "cursor": {
+          "properties": ["cursor"]
+        }
+      }
+    },
+    "cursorImage": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "cursor-image": {
+          "properties": ["cursor"]
+        }
+      }
+    },
+    "display": {
+      "data": {
+        "flex": {
+          "value": "flex",
+          "uss": {}
+        },
+        "hidden": {
+          "value": "none",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "": {
+          "properties": ["display"]
+        }
+      }
+    },
+    "flex": {
+      "data": {
+        "1": {
+          "value": "1 1 0%",
+          "uss": {}
+        },
+        "auto": {
+          "value": "1 1 auto",
+          "uss": {}
+        },
+        "initial": {
+          "value": "0 1 auto",
+          "uss": {}
+        },
+        "none": {
+          "value": "none",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "flex": {
+          "properties": ["flex"]
+        }
+      }
+    },
+    "flexBasis": {
+      "data": {
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        },
+        "1of2": {
+          "value": "50%",
+          "uss": {}
+        },
+        "1of3": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "2of3": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "1of4": {
+          "value": "25%",
+          "uss": {}
+        },
+        "2of4": {
+          "value": "50%",
+          "uss": {}
+        },
+        "3of4": {
+          "value": "75%",
+          "uss": {}
+        },
+        "1of5": {
+          "value": "20%",
+          "uss": {}
+        },
+        "2of5": {
+          "value": "40%",
+          "uss": {}
+        },
+        "3of5": {
+          "value": "60%",
+          "uss": {}
+        },
+        "4of5": {
+          "value": "80%",
+          "uss": {}
+        },
+        "1of6": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "2of6": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "3of6": {
+          "value": "50%",
+          "uss": {}
+        },
+        "4of6": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "5of6": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "1of12": {
+          "value": "8.333333%",
+          "uss": {}
+        },
+        "2of12": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "3of12": {
+          "value": "25%",
+          "uss": {}
+        },
+        "4of12": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "5of12": {
+          "value": "41.666667%",
+          "uss": {}
+        },
+        "6of12": {
+          "value": "50%",
+          "uss": {}
+        },
+        "7of12": {
+          "value": "58.333333%",
+          "uss": {}
+        },
+        "8of12": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "9of12": {
+          "value": "75%",
+          "uss": {}
+        },
+        "10of12": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "11of12": {
+          "value": "91.666667%",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing"],
+      "tagPropertyMap": {
+        "flex-basis": {
+          "properties": ["flex-basis"]
+        }
+      }
+    },
+    "flexDirection": {
+      "data": {
+        "row": {
+          "value": "row",
+          "uss": {}
+        },
+        "row-reverse": {
+          "value": "row-reverse",
+          "uss": {}
+        },
+        "col": {
+          "value": "column",
+          "uss": {}
+        },
+        "col-reverse": {
+          "value": "column-reverse",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "flex": {
+          "properties": ["flex-direction"]
+        }
+      }
+    },
+    "flexGrow": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "DEFAULT": {
+          "value": "1",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "flex-grow": {
+          "properties": ["flex-grow"]
+        }
+      }
+    },
+    "flexShrink": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "DEFAULT": {
+          "value": "1",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "flex-shrink": {
+          "properties": ["flex-shrink"]
+        }
+      }
+    },
+    "flexWrap": {
+      "data": {
+        "wrap": {
+          "value": "wrap",
+          "uss": {}
+        },
+        "wrap-reverse": {
+          "value": "wrap-reverse",
+          "uss": {}
+        },
+        "nowrap": {
+          "value": "nowrap",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "flex": {
+          "properties": ["flex-wrap"]
+        }
+      }
+    },
+    "fontDefinition": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "font": {
+          "properties": ["-unity-font-definition"]
+        }
+      }
+    },
+    "fontSize": {
+      "data": {
+        "xs": {
+          "value": "12px",
+          "uss": {}
+        },
+        "sm": {
+          "value": "14px",
+          "uss": {}
+        },
+        "base": {
+          "value": "16px",
+          "uss": {}
+        },
+        "lg": {
+          "value": "18px",
+          "uss": {}
+        },
+        "xl": {
+          "value": "20px",
+          "uss": {}
+        },
+        "2xl": {
+          "value": "24px",
+          "uss": {}
+        },
+        "3xl": {
+          "value": "30px",
+          "uss": {}
+        },
+        "4xl": {
+          "value": "36px",
+          "uss": {}
+        },
+        "5xl": {
+          "value": "48px",
+          "uss": {}
+        },
+        "6xl": {
+          "value": "60px",
+          "uss": {}
+        },
+        "7xl": {
+          "value": "72px",
+          "uss": {}
+        },
+        "8xl": {
+          "value": "96px",
+          "uss": {}
+        },
+        "9xl": {
+          "value": "128px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text": {
+          "properties": ["font-size"]
+        }
+      }
+    },
+    "fontStyle": {
+      "data": {
+        "italic": {
+          "value": "italic",
+          "uss": {}
+        },
+        "normal": {
+          "value": "normal",
+          "uss": {}
+        },
+        "bold": {
+          "value": "bold",
+          "uss": {}
+        },
+        "bold-italic": {
+          "value": "bold-and-italic",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text": {
+          "properties": ["-unity-font-style"]
+        }
+      }
+    },
+    "height": {
+      "data": {
+        "1of2": {
+          "value": "50%",
+          "uss": {}
+        },
+        "1of3": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "2of3": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "1of4": {
+          "value": "25%",
+          "uss": {}
+        },
+        "2of4": {
+          "value": "50%",
+          "uss": {}
+        },
+        "3of4": {
+          "value": "75%",
+          "uss": {}
+        },
+        "1of5": {
+          "value": "20%",
+          "uss": {}
+        },
+        "2of5": {
+          "value": "40%",
+          "uss": {}
+        },
+        "3of5": {
+          "value": "60%",
+          "uss": {}
+        },
+        "4of5": {
+          "value": "80%",
+          "uss": {}
+        },
+        "1of6": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "2of6": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "3of6": {
+          "value": "50%",
+          "uss": {}
+        },
+        "4of6": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "5of6": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "1of12": {
+          "value": "8.333333%",
+          "uss": {}
+        },
+        "2of12": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "3of12": {
+          "value": "25%",
+          "uss": {}
+        },
+        "4of12": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "5of12": {
+          "value": "41.666667%",
+          "uss": {}
+        },
+        "6of12": {
+          "value": "50%",
+          "uss": {}
+        },
+        "7of12": {
+          "value": "58.333333%",
+          "uss": {}
+        },
+        "8of12": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "9of12": {
+          "value": "75%",
+          "uss": {}
+        },
+        "10of12": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "11of12": {
+          "value": "91.666667%",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing"],
+      "tagPropertyMap": {
+        "h": {
+          "properties": ["height"]
+        }
+      }
+    },
+    "inset": {
+      "data": {
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        },
+        "1of2": {
+          "value": "50%",
+          "uss": {}
+        },
+        "1of3": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "2of3": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "1of4": {
+          "value": "25%",
+          "uss": {}
+        },
+        "2of4": {
+          "value": "50%",
+          "uss": {}
+        },
+        "3of4": {
+          "value": "75%",
+          "uss": {}
+        },
+        "1of5": {
+          "value": "20%",
+          "uss": {}
+        },
+        "2of5": {
+          "value": "40%",
+          "uss": {}
+        },
+        "3of5": {
+          "value": "60%",
+          "uss": {}
+        },
+        "4of5": {
+          "value": "80%",
+          "uss": {}
+        },
+        "1of6": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "2of6": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "3of6": {
+          "value": "50%",
+          "uss": {}
+        },
+        "4of6": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "5of6": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        },
+        "minus-1of2": {
+          "value": "-50%",
+          "uss": {}
+        },
+        "minus-1of3": {
+          "value": "-33.333333%",
+          "uss": {}
+        },
+        "minus-2of3": {
+          "value": "-66.666667%",
+          "uss": {}
+        },
+        "minus-1of4": {
+          "value": "-25%",
+          "uss": {}
+        },
+        "minus-2of4": {
+          "value": "-50%",
+          "uss": {}
+        },
+        "minus-3of4": {
+          "value": "-75%",
+          "uss": {}
+        },
+        "minus-full": {
+          "value": "-100%",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing", "core.negativeSpacing"],
+      "tagPropertyMap": {
+        "inset": {
+          "properties": ["top", "right", "bottom", "left"]
+        },
+        "inset-x": {
+          "properties": ["left", "right"]
+        },
+        "inset-y": {
+          "properties": ["top", "bottom"]
+        },
+        "top": {
+          "properties": ["top"]
+        },
+        "right": {
+          "properties": ["right"]
+        },
+        "bottom": {
+          "properties": ["bottom"]
+        },
+        "left": {
+          "properties": ["left"]
+        }
+      }
+    },
+    "justifyContent": {
+      "data": {
+        "start": {
+          "value": "flex-start",
+          "uss": {}
+        },
+        "center": {
+          "value": "center",
+          "uss": {}
+        },
+        "end": {
+          "value": "flex-end",
+          "uss": {}
+        },
+        "between": {
+          "value": "space-between",
+          "uss": {}
+        },
+        "around": {
+          "value": "space-around",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "justify": {
+          "properties": ["justify-content"]
+        }
+      }
+    },
+    "letterSpacing": {
+      "data": {
+        "tighter": {
+          "value": "-5px",
+          "uss": {}
+        },
+        "tight": {
+          "value": "-2.5px",
+          "uss": {}
+        },
+        "normal": {
+          "value": "0",
+          "uss": {}
+        },
+        "wide": {
+          "value": "2.5px",
+          "uss": {}
+        },
+        "wider": {
+          "value": "5px",
+          "uss": {}
+        },
+        "widest": {
+          "value": "10px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "tracking": {
+          "properties": ["letter-spacing"]
+        }
+      }
+    },
+    "margin": {
+      "data": {
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing", "core.negativeSpacing"],
+      "tagPropertyMap": {
+        "m": {
+          "properties": ["margin"]
+        },
+        "mx": {
+          "properties": ["margin-left", "margin-right"]
+        },
+        "my": {
+          "properties": ["margin-top", "margin-bottom"]
+        },
+        "mt": {
+          "properties": ["margin-top"]
+        },
+        "mr": {
+          "properties": ["margin-right"]
+        },
+        "mb": {
+          "properties": ["margin-bottom"]
+        },
+        "ml": {
+          "properties": ["margin-left"]
+        }
+      }
+    },
+    "maxHeight": {
+      "data": {
+        "full": {
+          "value": "100%",
+          "uss": {}
+        },
+        "none": {
+          "value": "none",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing"],
+      "tagPropertyMap": {
+        "max-h": {
+          "properties": ["max-height"]
+        }
+      }
+    },
+    "maxWidth": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "none": {
+          "value": "none",
+          "uss": {}
+        },
+        "xs": {
+          "value": "320px",
+          "uss": {}
+        },
+        "sm": {
+          "value": "384px",
+          "uss": {}
+        },
+        "md": {
+          "value": "448px",
+          "uss": {}
+        },
+        "lg": {
+          "value": "512px",
+          "uss": {}
+        },
+        "xl": {
+          "value": "576px",
+          "uss": {}
+        },
+        "2xl": {
+          "value": "672px",
+          "uss": {}
+        },
+        "3xl": {
+          "value": "768px",
+          "uss": {}
+        },
+        "4xl": {
+          "value": "896px",
+          "uss": {}
+        },
+        "5xl": {
+          "value": "1024px",
+          "uss": {}
+        },
+        "6xl": {
+          "value": "1152px",
+          "uss": {}
+        },
+        "7xl": {
+          "value": "1280px",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        },
+        "screen-sm": {
+          "value": "640px",
+          "uss": {}
+        },
+        "screen-md": {
+          "value": "768px",
+          "uss": {}
+        },
+        "screen-lg": {
+          "value": "1024px",
+          "uss": {}
+        },
+        "screen-xl": {
+          "value": "1280px",
+          "uss": {}
+        },
+        "screen-2xl": {
+          "value": "1536px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "max-w": {
+          "properties": ["max-width"]
+        }
+      }
+    },
+    "minHeight": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        },
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "min-h": {
+          "properties": ["min-height"]
+        }
+      }
+    },
+    "minWidth": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        },
+        "auto": {
+          "value": "auto",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "min-w": {
+          "properties": ["min-width"]
+        }
+      }
+    },
+    "opacity": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "5": {
+          "value": "0.05",
+          "uss": {}
+        },
+        "10": {
+          "value": "0.1",
+          "uss": {}
+        },
+        "20": {
+          "value": "0.2",
+          "uss": {}
+        },
+        "25": {
+          "value": "0.25",
+          "uss": {}
+        },
+        "30": {
+          "value": "0.3",
+          "uss": {}
+        },
+        "40": {
+          "value": "0.4",
+          "uss": {}
+        },
+        "50": {
+          "value": "0.5",
+          "uss": {}
+        },
+        "60": {
+          "value": "0.6",
+          "uss": {}
+        },
+        "70": {
+          "value": "0.7",
+          "uss": {}
+        },
+        "75": {
+          "value": "0.75",
+          "uss": {}
+        },
+        "80": {
+          "value": "0.8",
+          "uss": {}
+        },
+        "90": {
+          "value": "0.9",
+          "uss": {}
+        },
+        "95": {
+          "value": "0.95",
+          "uss": {}
+        },
+        "100": {
+          "value": "1",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "opacity": {
+          "properties": ["opacity"]
+        }
+      }
+    },
+    "overflow": {
+      "data": {
+        "hidden": {
+          "value": "hidden",
+          "uss": {}
+        },
+        "visible": {
+          "value": "visible",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "overflow": {
+          "properties": ["overflow"]
+        }
+      }
+    },
+    "overflowClipBox": {
+      "data": {
+        "padding": {
+          "value": "padding-box",
+          "uss": {}
+        },
+        "content": {
+          "value": "content-box",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "overflow-clip": {
+          "properties": ["-unity-overflow-clip-box"]
+        }
+      }
+    },
+    "padding": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing"],
+      "tagPropertyMap": {
+        "p": {
+          "properties": ["padding"]
+        },
+        "px": {
+          "properties": ["padding-left", "padding-right"]
+        },
+        "py": {
+          "properties": ["padding-top", "padding-bottom"]
+        },
+        "pt": {
+          "properties": ["padding-top"]
+        },
+        "pr": {
+          "properties": ["padding-right"]
+        },
+        "pb": {
+          "properties": ["padding-bottom"]
+        },
+        "pl": {
+          "properties": ["padding-left"]
+        }
+      }
+    },
+    "paragraphSpacing": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing"],
+      "tagPropertyMap": {
+        "paragraph-spacing": {
+          "properties": ["-unity-paragraph-spacing"]
+        }
+      }
+    },
+    "position": {
+      "data": {
+        "absolute": {
+          "value": "absolute",
+          "uss": {}
+        },
+        "relative": {
+          "value": "relative",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "position": {
+          "properties": ["position"]
+        }
+      }
+    },
+    "rotate": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "1": {
+          "value": "1deg",
+          "uss": {}
+        },
+        "2": {
+          "value": "2deg",
+          "uss": {}
+        },
+        "3": {
+          "value": "3deg",
+          "uss": {}
+        },
+        "6": {
+          "value": "6deg",
+          "uss": {}
+        },
+        "12": {
+          "value": "12deg",
+          "uss": {}
+        },
+        "45": {
+          "value": "45deg",
+          "uss": {}
+        },
+        "90": {
+          "value": "90deg",
+          "uss": {}
+        },
+        "180": {
+          "value": "180deg",
+          "uss": {}
+        },
+        "none": {
+          "value": "none",
+          "uss": {}
+        },
+        "minus-1": {
+          "value": "-1deg",
+          "uss": {}
+        },
+        "minus-2": {
+          "value": "-2deg",
+          "uss": {}
+        },
+        "minus-3": {
+          "value": "-3deg",
+          "uss": {}
+        },
+        "minus-6": {
+          "value": "-6deg",
+          "uss": {}
+        },
+        "minus-12": {
+          "value": "-12deg",
+          "uss": {}
+        },
+        "minus-45": {
+          "value": "-45deg",
+          "uss": {}
+        },
+        "minus-90": {
+          "value": "-90deg",
+          "uss": {}
+        },
+        "minus-180": {
+          "value": "-180deg",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "rotate": {
+          "properties": ["--zb-rotate"]
+        }
+      }
+    },
+    "scale": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "50": {
+          "value": "0.5",
+          "uss": {}
+        },
+        "75": {
+          "value": "0.75",
+          "uss": {}
+        },
+        "90": {
+          "value": "0.9",
+          "uss": {}
+        },
+        "95": {
+          "value": "0.95",
+          "uss": {}
+        },
+        "100": {
+          "value": "1",
+          "uss": {}
+        },
+        "105": {
+          "value": "1.05",
+          "uss": {}
+        },
+        "110": {
+          "value": "1.1",
+          "uss": {}
+        },
+        "125": {
+          "value": "1.25",
+          "uss": {}
+        },
+        "150": {
+          "value": "1.5",
+          "uss": {}
+        },
+        "none": {
+          "value": "none",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "scale": {
+          "properties": ["--zb-scale-x", "--zb-scale-y"]
+        },
+        "scale-x": {
+          "properties": ["--zb-scale-x"]
+        },
+        "scale-y": {
+          "properties": ["--zb-scale-y"]
+        }
+      }
+    },
+    "space": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing", "core.negativeSpacing"],
+      "tagPropertyMap": {
+        "space-x": {
+          "properties": ["margin-left", "margin-right"]
+        },
+        "space-y": {
+          "properties": ["margin-top", "margin-bottom"]
+        }
+      }
+    },
+    "textAlign": {
+      "data": {
+        "upper-left": {
+          "value": "upper-left",
+          "uss": {}
+        },
+        "left": {
+          "value": "middle-left",
+          "uss": {}
+        },
+        "lower-left": {
+          "value": "lower-left",
+          "uss": {}
+        },
+        "upper-center": {
+          "value": "upper-center",
+          "uss": {}
+        },
+        "center": {
+          "value": "middle-center",
+          "uss": {}
+        },
+        "lower-center": {
+          "value": "lower-center",
+          "uss": {}
+        },
+        "upper-right": {
+          "value": "upper-right",
+          "uss": {}
+        },
+        "right": {
+          "value": "middle-right",
+          "uss": {}
+        },
+        "lower-right": {
+          "value": "lower-right",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text": {
+          "properties": ["-unity-text-align"]
+        }
+      }
+    },
+    "textColor": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": ["core.colors"],
+      "tagPropertyMap": {
+        "text": {
+          "properties": ["color"]
+        }
+      }
+    },
+    "textOutlineWidth": {
+      "data": {
+        "0": {
+          "value": "0",
+          "uss": {}
+        },
+        "1": {
+          "value": "1px",
+          "uss": {}
+        },
+        "2": {
+          "value": "2px",
+          "uss": {}
+        },
+        "3": {
+          "value": "3px",
+          "uss": {}
+        },
+        "4": {
+          "value": "4px",
+          "uss": {}
+        },
+        "8": {
+          "value": "8px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text-outline": {
+          "properties": ["-unity-text-outline-width"]
+        }
+      }
+    },
+    "textOutlineColor": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": ["core.colors"],
+      "tagPropertyMap": {
+        "text-outline": {
+          "properties": ["-unity-text-outline-color"]
+        }
+      }
+    },
+    "textOverflow": {
+      "data": {
+        "clip": {
+          "value": "clip",
+          "uss": {}
+        },
+        "ellipsis": {
+          "value": "ellipsis",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text-overflow": {
+          "properties": ["text-overflow"]
+        }
+      }
+    },
+    "textOverflowPosition": {
+      "data": {
+        "start": {
+          "value": "start",
+          "uss": {}
+        },
+        "middle": {
+          "value": "middle",
+          "uss": {}
+        },
+        "end": {
+          "value": "end",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text-overflow": {
+          "properties": ["-unity-text-overflow-position"]
+        }
+      }
+    },
+    "textShadow": {
+      "data": {
+        "none": {
+          "value": "0 0 #000",
+          "uss": {}
+        },
+        "sm": {
+          "value": "0 1px 2px var(--zb-text-shadow-color)",
+          "uss": {}
+        },
+        "DEFAULT": {
+          "value": "0 2px 4px var(--zb-text-shadow-color)",
+          "uss": {}
+        },
+        "md": {
+          "value": "0 4px 8px var(--zb-text-shadow-color)",
+          "uss": {}
+        },
+        "lg": {
+          "value": "0 8px 16px var(--zb-text-shadow-color)",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "text-shadow": {
+          "properties": ["text-shadow"]
+        }
+      }
+    },
+    "textShadowColor": {
+      "data": {},
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": ["core.colors"],
+      "tagPropertyMap": {
+        "text-shadow": {
+          "properties": ["--zb-text-shadow-color"]
+        }
+      }
+    },
+    "transform": {
+      "data": {
+        "transform": {
+          "value": "0",
+          "uss": {
+            "--zb-scale-x": "1",
+            "--zb-scale-y": "1",
+            "translate": "var(--zb-translate-x) var(--zb-translate-y)",
+            "rotate": "var(--zb-rotate)",
+            "scale": "var(--zb-scale-x) var(--zb-scale-y)"
+          }
+        }
+      },
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "": {
+          "properties": ["--zb-translate-x", "--zb-translate-y", "--zb-rotate"]
+        }
+      }
+    },
+    "transformOrigin": {
+      "data": {
+        "center": {
+          "value": "center center",
+          "uss": {}
+        },
+        "top": {
+          "value": "top",
+          "uss": {}
+        },
+        "top-right": {
+          "value": "top right",
+          "uss": {}
+        },
+        "right": {
+          "value": "right",
+          "uss": {}
+        },
+        "bottom-right": {
+          "value": "bottom right",
+          "uss": {}
+        },
+        "bottom": {
+          "value": "bottom",
+          "uss": {}
+        },
+        "bottom-left": {
+          "value": "bottom left",
+          "uss": {}
+        },
+        "left": {
+          "value": "left",
+          "uss": {}
+        },
+        "top-left": {
+          "value": "top left",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "origin": {
+          "properties": ["transform-origin"]
+        }
+      }
+    },
+    "transitionDelay": {
+      "data": {
+        "0": {
+          "value": "0s",
+          "uss": {}
+        },
+        "75": {
+          "value": "75ms",
+          "uss": {}
+        },
+        "100": {
+          "value": "100ms",
+          "uss": {}
+        },
+        "150": {
+          "value": "150ms",
+          "uss": {}
+        },
+        "200": {
+          "value": "200ms",
+          "uss": {}
+        },
+        "300": {
+          "value": "300ms",
+          "uss": {}
+        },
+        "500": {
+          "value": "500ms",
+          "uss": {}
+        },
+        "700": {
+          "value": "700ms",
+          "uss": {}
+        },
+        "1000": {
+          "value": "1000ms",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "transition-delay": {
+          "properties": ["transition-delay"]
+        }
+      }
+    },
+    "transitionDuration": {
+      "data": {
+        "0": {
+          "value": "0s",
+          "uss": {}
+        },
+        "75": {
+          "value": "75ms",
+          "uss": {}
+        },
+        "100": {
+          "value": "100ms",
+          "uss": {}
+        },
+        "150": {
+          "value": "150ms",
+          "uss": {}
+        },
+        "200": {
+          "value": "200ms",
+          "uss": {}
+        },
+        "300": {
+          "value": "300ms",
+          "uss": {}
+        },
+        "500": {
+          "value": "500ms",
+          "uss": {}
+        },
+        "700": {
+          "value": "700ms",
+          "uss": {}
+        },
+        "1000": {
+          "value": "1000ms",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "transition-duration": {
+          "properties": ["transition-duration"]
+        }
+      }
+    },
+    "transitionProperty": {
+      "data": {
+        "none": {
+          "value": "none",
+          "uss": {}
+        },
+        "all": {
+          "value": "all",
+          "uss": {}
+        },
+        "DEFAULT": {
+          "value": "background-color, border-color, color, fill, -unity-background-image-tint-color, -unity-text-outline-color, box-shadow, opacity, scale, rotate, translate, transform-origin",
+          "uss": {}
+        },
+        "colors": {
+          "value": "background-color, border-color, color, fill, -unity-background-image-tint-color, -unity-text-outline-color ",
+          "uss": {}
+        },
+        "opacity": {
+          "value": "opacity",
+          "uss": {}
+        },
+        "shadow": {
+          "value": "text-shadow, box-shadow",
+          "uss": {}
+        },
+        "transform": {
+          "value": "scale, rotate, translate, transform-origin",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "transition": {
+          "properties": ["transition-property"]
+        }
+      }
+    },
+    "transitionTimingFunction": {
+      "data": {
+        "linear": {
+          "value": "linear",
+          "uss": {}
+        },
+        "in": {
+          "value": "ease-in",
+          "uss": {}
+        },
+        "out": {
+          "value": "ease-out",
+          "uss": {}
+        },
+        "in-out": {
+          "value": "ease-in-out",
+          "uss": {}
+        },
+        "in-sine": {
+          "value": "ease-in-sine",
+          "uss": {}
+        },
+        "out-sine": {
+          "value": "ease-out-sine",
+          "uss": {}
+        },
+        "in-out-sine": {
+          "value": "ease-in-out-sine",
+          "uss": {}
+        },
+        "in-cubic": {
+          "value": "ease-in-cubic",
+          "uss": {}
+        },
+        "out-cubic": {
+          "value": "ease-out-cubic",
+          "uss": {}
+        },
+        "in-out-cubic": {
+          "value": "ease-in-out-cubic",
+          "uss": {}
+        },
+        "in-circ": {
+          "value": "ease-in-circ",
+          "uss": {}
+        },
+        "out-circ": {
+          "value": "ease-out-circ",
+          "uss": {}
+        },
+        "in-out-circ": {
+          "value": "ease-in-out-circ",
+          "uss": {}
+        },
+        "in-elastic": {
+          "value": "ease-in-elastic",
+          "uss": {}
+        },
+        "out-elastic": {
+          "value": "ease-out-elastic",
+          "uss": {}
+        },
+        "in-out-elastic": {
+          "value": "ease-in-out-elastic",
+          "uss": {}
+        },
+        "in-back": {
+          "value": "ease-in-back",
+          "uss": {}
+        },
+        "out-back": {
+          "value": "ease-out-back",
+          "uss": {}
+        },
+        "in-out-back": {
+          "value": "ease-in-out-back",
+          "uss": {}
+        },
+        "in-bounce": {
+          "value": "ease-in-bounce",
+          "uss": {}
+        },
+        "out-bounce": {
+          "value": "ease-out-bounce",
+          "uss": {}
+        },
+        "in-out-bounce": {
+          "value": "ease-in-out-bounce",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "ease": {
+          "properties": ["transition-timing-function"]
+        }
+      }
+    },
+    "translate": {
+      "data": {
+        "1of2": {
+          "value": "50%",
+          "uss": {}
+        },
+        "1of3": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "2of3": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "1of4": {
+          "value": "25%",
+          "uss": {}
+        },
+        "2of4": {
+          "value": "50%",
+          "uss": {}
+        },
+        "3of4": {
+          "value": "75%",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        },
+        "minus-1of2": {
+          "value": "-50%",
+          "uss": {}
+        },
+        "minus-1of3": {
+          "value": "-33.333333%",
+          "uss": {}
+        },
+        "minus-2of3": {
+          "value": "-66.666667%",
+          "uss": {}
+        },
+        "minus-1of4": {
+          "value": "-25%",
+          "uss": {}
+        },
+        "minus-2of4": {
+          "value": "-50%",
+          "uss": {}
+        },
+        "minus-3of4": {
+          "value": "-75%",
+          "uss": {}
+        },
+        "minus-full": {
+          "value": "-100%",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": ["hover", "focus"],
+      "extendFields": ["core.spacing", "core.negativeSpacing"],
+      "tagPropertyMap": {
+        "translate-x": {
+          "properties": ["--zb-translate-x"]
+        },
+        "translate-y": {
+          "properties": ["--zb-translate-y"]
+        }
+      }
+    },
+    "visibility": {
+      "data": {
+        "visible": {
+          "value": "visible",
+          "uss": {}
+        },
+        "invisible": {
+          "value": "hidden",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "": {
+          "properties": ["visibility"]
+        }
+      }
+    },
+    "whiteSpace": {
+      "data": {
+        "normal": {
+          "value": "normal",
+          "uss": {}
+        },
+        "nowrap": {
+          "value": "nowrap",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "whitespace": {
+          "properties": ["white-space"]
+        }
+      }
+    },
+    "width": {
+      "data": {
+        "1of2": {
+          "value": "50%",
+          "uss": {}
+        },
+        "1of3": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "2of3": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "1of4": {
+          "value": "25%",
+          "uss": {}
+        },
+        "2of4": {
+          "value": "50%",
+          "uss": {}
+        },
+        "3of4": {
+          "value": "75%",
+          "uss": {}
+        },
+        "1of5": {
+          "value": "20%",
+          "uss": {}
+        },
+        "2of5": {
+          "value": "40%",
+          "uss": {}
+        },
+        "3of5": {
+          "value": "60%",
+          "uss": {}
+        },
+        "4of5": {
+          "value": "80%",
+          "uss": {}
+        },
+        "1of6": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "2of6": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "3of6": {
+          "value": "50%",
+          "uss": {}
+        },
+        "4of6": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "5of6": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "1of12": {
+          "value": "8.333333%",
+          "uss": {}
+        },
+        "2of12": {
+          "value": "16.666667%",
+          "uss": {}
+        },
+        "3of12": {
+          "value": "25%",
+          "uss": {}
+        },
+        "4of12": {
+          "value": "33.333333%",
+          "uss": {}
+        },
+        "5of12": {
+          "value": "41.666667%",
+          "uss": {}
+        },
+        "6of12": {
+          "value": "50%",
+          "uss": {}
+        },
+        "7of12": {
+          "value": "58.333333%",
+          "uss": {}
+        },
+        "8of12": {
+          "value": "66.666667%",
+          "uss": {}
+        },
+        "9of12": {
+          "value": "75%",
+          "uss": {}
+        },
+        "10of12": {
+          "value": "83.333333%",
+          "uss": {}
+        },
+        "11of12": {
+          "value": "91.666667%",
+          "uss": {}
+        },
+        "full": {
+          "value": "100%",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": ["core.spacing"],
+      "tagPropertyMap": {
+        "w": {
+          "properties": ["width"]
+        }
+      }
+    },
+    "wordSpacing": {
+      "data": {
+        "tighter": {
+          "value": "-5px",
+          "uss": {}
+        },
+        "tight": {
+          "value": "-2.5px",
+          "uss": {}
+        },
+        "normal": {
+          "value": "0",
+          "uss": {}
+        },
+        "wide": {
+          "value": "2.5px",
+          "uss": {}
+        },
+        "wider": {
+          "value": "5px",
+          "uss": {}
+        },
+        "widest": {
+          "value": "10px",
+          "uss": {}
+        }
+      },
+      "enabled": true,
+      "modifierVariations": [],
+      "extendFields": [],
+      "tagPropertyMap": {
+        "word-space": {
+          "properties": ["word-spacing"]
+        }
+      }
+    }
+  },
+  "compilation": {
+    "content": ["Assets/*.cs", "Assets/*.uxml"],
+    "safelist": [],
+    "blocklist": []
+  },
+  "schemaVersion": "1.0.0"
+}

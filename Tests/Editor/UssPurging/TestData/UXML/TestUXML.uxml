@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Tests/Editor/UssPurging/TestData/TestUss.uss" />
+    <ui:VisualElement>
+        <ui:VisualElement class="space-y-4 mt-minus-3">
+            <ui:Label tabindex="-1" text="Test Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="hover_text-red-800 pl-6 bold" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" class="bg-blue-300 hover_bg-blue-700 transition transition-duration-300 text-slate-900 hover_text-gray-200" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
+    <ui:VisualElement style="flex-grow: 1; padding-right: 0; padding-left: 0; padding-top: 3px; padding-bottom: 3px;">
+        <uie:PropertyField name="StringValuePropertyField" focusable="true" />
+        <ui:ListView show-foldout-header="true" show-bound-collection-size="true" virtualization-method="DynamicHeight" name="StringValueDictionary" show-add-remove-footer="true" show-alternating-row-backgrounds="ContentOnly" focusable="true" show-border="true" />
+        <ui:ListView show-foldout-header="true" show-bound-collection-size="true" virtualization-method="DynamicHeight" name="ColorPaletteValue" show-add-remove-footer="true" focusable="true" show-alternating-row-backgrounds="ContentOnly" reorderable="true" show-border="true" />
+        <ui:ListView show-foldout-header="true" show-bound-collection-size="true" virtualization-method="DynamicHeight" name="ImageDictionaryValue" show-add-remove-footer="true" focusable="true" show-border="true" show-alternating-row-backgrounds="ContentOnly" />
+        <ui:ListView show-foldout-header="true" show-bound-collection-size="true" virtualization-method="DynamicHeight" name="FontAssetDictionaryValue" show-add-remove-footer="true" focusable="true" show-border="true" show-alternating-row-backgrounds="ContentOnly" />
+        <uie:PropertyField name="StringListValue" />
+        <ui:ListView show-foldout-header="true" show-bound-collection-size="true" virtualization-method="DynamicHeight" name="ModifierDictionaryValue" show-add-remove-footer="true" focusable="true" show-border="true" show-alternating-row-backgrounds="ContentOnly" reorderable="true" />
+        <ui:ListView show-foldout-header="true" show-bound-collection-size="true" virtualization-method="DynamicHeight" name="PluginDictionaryValue" show-add-remove-footer="true" focusable="true" show-border="true" show-alternating-row-backgrounds="ContentOnly" reorderable="true" />
+    </ui:VisualElement>
+</ui:UXML>

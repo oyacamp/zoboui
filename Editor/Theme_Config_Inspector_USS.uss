@@ -1,0 +1,123 @@
+VisualElement {
+}
+
+.themeconfg__section {
+    flex-grow: 0;
+    background-color: rgba(12, 12, 12, 0.3);
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: rgb(27, 27, 27);
+    flex-shrink: 0;
+}
+
+.themeconfig__section__heading {
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+    color: rgba(207, 207, 207, 0.78);
+    font-size: 15px;
+}
+
+.themeconfig__button {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.themeconfig__button_primary {
+    background-color: rgba(188, 188, 188, 0.24);
+    -unity-font-style: bold;
+}
+
+.themeconfig__button__secondary {
+    flex-grow: 1;
+    background-color: rgba(188, 188, 188, 0.02);
+    border-left-color: rgba(238, 222, 222, 0.43);
+    border-right-color: rgba(238, 222, 222, 0.43);
+    border-top-color: rgba(238, 222, 222, 0.43);
+    border-bottom-color: rgba(238, 222, 222, 0.43);
+}
+
+.themeconfig__button_primary:hover {
+    background-color: rgba(188, 188, 188, 0.46);
+    -unity-font-style: bold;
+}
+
+.themeconfig__button__secondary:hover {
+    flex-grow: 1;
+    background-color: rgba(188, 188, 188, 0.11);
+    border-left-color: rgba(238, 222, 222, 0.43);
+    border-right-color: rgba(238, 222, 222, 0.43);
+    border-top-color: rgba(238, 222, 222, 0.43);
+    border-bottom-color: rgba(238, 222, 222, 0.43);
+}
+
+.themeconfig__keyval__input {
+    margin-bottom: 6px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.themeconfig__keyval__input #unity-text-input {
+    margin-top: 6px;
+}
+
+.themeconfig__keyval__input #unity-internal-color-field {
+    margin-top: 6px;
+}
+
+.themeconfig__keyval__input .unity-object-field__input {
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.themeconfig__keyval__input Label {
+    margin-bottom: 6px;
+}
+
+.themeconfig__section__subheading {
+    margin-bottom: 14px;
+}
+
+.themeconfig__settings__foldout {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.themeconfig__alert__icon {
+    flex-grow: 0;
+    height: 12px;
+    width: 12px;
+    margin-right: 3px;
+    flex-shrink: 0;
+    margin-left: 5px;
+}
+
+.themeconfig__alert__icon__info {
+    background-image: url('project://database/Packages/com.oyacamp.zoboui/Editor/Images/information.png');
+}
+
+.themeconfig__alert__icon__error {
+    background-image: url('project://database/Packages/com.oyacamp.zoboui/Editor/Images/error.png?fileID=21300000&guid=fe743c6fcf47e644ab6da941dfa7e4c2&type=3#error');
+}
+
+.themeconfig__alert__icon__warning {
+    background-image: url('project://database/Packages/com.oyacamp.zoboui/Editor/Images/warning.png?fileID=21300000&guid=8e9eb2b16dfa6e146a5fb0a5f2bf4745&type=3#warning');
+}
+
+#CoreSectionPropertyHolder .core_property_container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#CompilationSectionPropertyHolder .core_property_container {
+    padding-left: 15px;
+    padding-right: 15px;
+}

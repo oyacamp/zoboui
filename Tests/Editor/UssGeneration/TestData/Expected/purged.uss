@@ -1,0 +1,21 @@
+.bg-blue-300 {
+	background-color: #93C5FD;
+}
+
+.rounded {
+	border-radius: 4px;
+}
+
+.mt-minus-3 {
+	margin-top: -12px;
+}
+
+.space-y-4 > * {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.hover_text-red-800:hover {
+	color: #991B1B;
+}
+

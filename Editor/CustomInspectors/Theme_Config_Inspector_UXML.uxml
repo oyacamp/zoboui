@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; padding-top: 20px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px;">
+        <ui:VisualElement name="SettingsSection" style="margin-bottom: 62px;">
+            <ui:Label tabindex="-1" text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="themeconfig__section__heading" />
+            <ui:Foldout text="USS Generation" name="OutputSection" view-data-key="themeconfig-uss-output-section" class="themeconfig__settings__foldout">
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:TextField picking-mode="Ignore" label="Generated File Path" binding-path="m_ussFilePath" name="OutputUssFilePathTextField" />
+                    <ui:TextField picking-mode="Ignore" label="Purged File Path" binding-path="m_purgedUssFilePath" name="PurgedUssFilePathTextField" style="padding-top: 6px;" />
+                    <ui:VisualElement style="flex-grow: 1; flex-direction: row; width: 100%; justify-content: space-between; margin-top: 14px;">
+                        <ui:Button text="Generate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GenerateUSSButton" class="unity-button themeconfig__button themeconfig__button_primary" style="flex-grow: 1;" />
+                        <ui:Button text="Purge" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PurgeButton" class="themeconfig__button themeconfig__button__secondary" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Foldout>
+            <ui:Foldout text="Config Import" value="false" name="ImportSection" view-data-key="themeconfig-config-import-section" class="themeconfig__settings__foldout">
+                <ui:VisualElement style="flex-grow: 1;">
+                    <uie:ObjectField label="JSON  File" binding-path="m_importThemeConfigJsonFile" allow-scene-objects="false" type="UnityEngine.TextAsset, UnityEngine.CoreModule" name="ImportJsonFileField" />
+                    <ui:Button text="Import Config" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ImportConfigButton" style="margin-top: 8px;" />
+                    <ui:Label tabindex="-1" text="&lt;b&gt;WARNING&lt;/b&gt;: this will overwrite your current config!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 146, 146); -unity-text-align: upper-center; margin-top: 8px;" />
+                </ui:VisualElement>
+            </ui:Foldout>
+            <ui:Foldout text="Config Export" name="ExportSection" value="false" view-data-key="themeconfig-config-export-section" class="themeconfig__settings__foldout">
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:TextField picking-mode="Ignore" label="Output Config Path" binding-path="m_exportConfigJsonFilePath" name="ExportedJsonFilePathField" />
+                    <ui:Button text="Export" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExportConfigButton" binding-path="ExportThemeConfigToJson" tooltip="Exports the current theme config to a json file" style="margin-top: 8px;" />
+                </ui:VisualElement>
+            </ui:Foldout>
+            <ui:EnumField label="Log Level" type="ZoboUI.Core.Utils.LogLevel, com.oyacamp.zoboui.editor" name="LogLevelField" binding-path="logLevel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ThemeSection" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Theme" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeLabel" class="themeconfig__section__heading" />
+            <uie:PropertyField binding-path="themeConfigDisplay" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

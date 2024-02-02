@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Tests/Editor/UssGeneration/TestData/Expected/generated.uss" />
+    <ui:VisualElement>
+        <ui:VisualElement name="InputHolder" class="space-y-4 mt-minus-3">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" class="hover_text-red-800" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="bg-blue-300 rounded" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

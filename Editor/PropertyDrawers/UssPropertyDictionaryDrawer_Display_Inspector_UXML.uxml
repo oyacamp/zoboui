@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
+    <ui:VisualElement style="flex-grow: 0;">
+        <ui:VisualElement name="InputHolder" style="flex-grow: 0; flex-shrink: 0; flex-direction: row; justify-content: space-between; margin-right: 10px; margin-left: 10px;">
+            <ui:TextField picking-mode="Ignore" label="Property" name="KeyField" tooltip="The USS Property name e.g border-radius" class="themeconfig__keyval__input" style="flex-shrink: 1;" />
+            <ui:TextField picking-mode="Ignore" label="Value" name="ValueField" tooltip="The value of the USS property, the way it would appear in a USS file." class="themeconfig__keyval__input" style="margin-bottom: 6px; flex-shrink: 1;" />
+        </ui:VisualElement>
+        <ZoboUI.Editor.AlertElement message="My alert message" type="Error" name="ErrorAlertElement" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
+    <ui:VisualElement style="flex-grow: 0; padding-bottom: 10px; padding-top: 8px;">
+        <ui:VisualElement name="InputHolder" style="flex-grow: 0; flex-shrink: 0; flex-direction: column; justify-content: space-between; margin-right: 10px; margin-left: 14px;">
+            <ui:TextField picking-mode="Ignore" label="Tag" name="KeyField" tooltip="The class tag that is prepended to keys to generate classnames. e.g &quot;rounded&quot; or &quot;bg&quot;" class="themeconfig__keyval__input" style="flex-shrink: 1;" />
+            <uie:PropertyField label="Property Names" tooltip="A list of USS property names to assign the values to. e.g for the &quot;rounded&quot; tag, this would include the &quot;&quot;border-radius&quot; uss property" name="PropertyNamesListView" />
+        </ui:VisualElement>
+        <ZoboUI.Editor.AlertElement message="My alert message" type="Error" name="ErrorAlertElement" />
+    </ui:VisualElement>
+</ui:UXML>

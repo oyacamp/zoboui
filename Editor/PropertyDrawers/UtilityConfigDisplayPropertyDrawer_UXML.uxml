@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Foldout name="UtilityFoldout" focusable="true" style="margin-left: 15px; margin-right: 15px; margin-bottom: 7px; margin-top: 4px;">
+            <ui:VisualElement name="ContentHolder" style="flex-grow: 0; flex-shrink: 0; flex-direction: column; justify-content: space-between;">
+                <ui:Toggle label="Enabled" binding-path="Enabled" />
+                <ui:ListView focusable="true" name="ClassVariations" header-title="Modifier Variations" show-foldout-header="true" show-border="true" reorderable="true" virtualization-method="DynamicHeight" show-add-remove-footer="true" />
+                <ui:ListView focusable="true" name="ExtendFields" show-bound-collection-size="true" show-foldout-header="true" show-border="true" header-title="Extend Fields" show-add-remove-footer="true" virtualization-method="DynamicHeight" reorderable="true" />
+                <ui:ListView focusable="true" name="ClassTagToUssPropertyMap" show-bound-collection-size="true" show-foldout-header="true" show-border="true" header-title="Tag Property Map" show-add-remove-footer="true" virtualization-method="DynamicHeight" reorderable="true" tooltip="A mapping of a class tag to USS property names. E.g &quot;rounded&quot; : [&quot;border-radius&quot;] or &quot;rounded-t&quot; : [&quot;border-top-left-radius&quot;, &quot;border-top-right-radius&quot;] , etc. The class tag will be prepended to the keys in the data for this utility, and the value is a list of USS property names to generate using the values in the provided data. " show-alternating-row-backgrounds="ContentOnly" />
+                <uie:PropertyField label="Data" name="Values" />
+            </ui:VisualElement>
+        </ui:Foldout>
+    </ui:VisualElement>
+</ui:UXML>
