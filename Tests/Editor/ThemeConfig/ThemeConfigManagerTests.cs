@@ -88,6 +88,14 @@ namespace ZoboUI.Editor.Tests
             // If the test plugin asset exists, delete it
             AssetDatabase.DeleteAsset(testPluginAssetPath);
 
+            // Delete the generated asset directory if it's empty
+            string directory = System.IO.Path.GetDirectoryName(testGeneratedThemeConfigAssetPath);
+
+            if (System.IO.Directory.Exists(directory))
+            {
+                AssetDatabase.DeleteAsset(directory);
+            }
+
 
         }
 
