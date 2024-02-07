@@ -971,7 +971,11 @@ namespace ZoboUI.Core
                 PropertyFormatter.FormatPropertyExtensionName(nameof(BaseCoreProperties.colors), PropertyFormatter.PropertyExtensionContext.Core)
             },
             tagPropertyMap = new ClassTagToUssPropertyDictionary(){
-                { "border", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "border-color" } } }
+                { "border", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "border-color" } } },
+                 { "border-t", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "border-top-color" } } },
+                { "border-r", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "border-right-color" } } },
+                { "border-b", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "border-bottom-color" } } },
+                { "border-l", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "border-left-color" } } }
             },
             data = new ColorPaletteDictionary()
         };
