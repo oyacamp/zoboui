@@ -1429,8 +1429,10 @@ namespace ZoboUI.Core
         public UtilityConfigWithStringDictionary maxWidth = new UtilityConfigWithStringDictionary()
         {
             enabled = true,
+            extendFields = new StringListValue(){
+                PropertyFormatter.FormatPropertyExtensionName(nameof(BaseCoreProperties.spacing), PropertyFormatter.PropertyExtensionContext.Core)
+            },
             data = new KeyValueDictionary(){
-                    { "0", new StringKeyValueHolder(){ value = "0" } },
                     { "none", new StringKeyValueHolder(){ value = "none" } },
                     { "xs", new StringKeyValueHolder(){ value = "320px" } },
                     { "sm", new StringKeyValueHolder(){ value = "384px" } },
@@ -1461,8 +1463,10 @@ namespace ZoboUI.Core
         public UtilityConfigWithStringDictionary minHeight = new UtilityConfigWithStringDictionary()
         {
             enabled = true,
+            extendFields = new StringListValue(){
+                PropertyFormatter.FormatPropertyExtensionName(nameof(BaseCoreProperties.spacing), PropertyFormatter.PropertyExtensionContext.Core)
+            },
             data = new KeyValueDictionary(){
-                { "0", new StringKeyValueHolder(){ value = "0" } },
                 { "full", new StringKeyValueHolder(){ value = "100%" } },
                 { "auto", new StringKeyValueHolder(){ value = "auto" } }
             },
@@ -1475,8 +1479,10 @@ namespace ZoboUI.Core
         public UtilityConfigWithStringDictionary minWidth = new UtilityConfigWithStringDictionary()
         {
             enabled = true,
+            extendFields = new StringListValue(){
+                PropertyFormatter.FormatPropertyExtensionName(nameof(BaseCoreProperties.spacing), PropertyFormatter.PropertyExtensionContext.Core)
+            },
             data = new KeyValueDictionary(){
-                { "0", new StringKeyValueHolder(){ value = "0" } },
                 { "full", new StringKeyValueHolder(){ value = "100%" } },
                 { "auto", new StringKeyValueHolder(){ value = "auto" } }
             },
