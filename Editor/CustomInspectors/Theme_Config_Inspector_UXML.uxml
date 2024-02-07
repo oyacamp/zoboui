@@ -30,7 +30,7 @@
         </ui:VisualElement>
         <ui:VisualElement name="ThemeSection" style="flex-grow: 1;">
             <ui:Label tabindex="-1" text="Theme" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeLabel" class="themeconfig__section__heading" />
-            <uie:PropertyField binding-path="themeConfigDisplay" />
+            <uie:PropertyField binding-path="themeConfigDisplay" name="ConfigDisplayField" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

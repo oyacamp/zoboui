@@ -4,7 +4,8 @@ using ZoboUI.Core.Utils;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEditor.Search;
+using System;
+using UnityEditor.UIElements;
 
 namespace ZoboUI.Editor.Inspectors
 {
@@ -56,6 +57,7 @@ namespace ZoboUI.Editor.Inspectors
 
 
         }
+        private IVisualElementScheduledItem scheduledItem;
 
         public override VisualElement CreateInspectorGUI()
         {
@@ -63,13 +65,14 @@ namespace ZoboUI.Editor.Inspectors
             VisualElement myInspector = new VisualElement();
 
             Label loadingConfigLabel = new Label("Loading config...");
+            loadingConfigLabel.style.paddingTop = 10;
             myInspector.Add(loadingConfigLabel);
 
             VisualElement loadedUxmlContent = new VisualElement();
 
             loadedUxmlContent.style.visibility = Visibility.Hidden;
 
-            // Load from default reference
+            // Load from the uxml reference
             m_InspectorXML.CloneTree(loadedUxmlContent);
 
             myInspector.Add(loadedUxmlContent);
@@ -135,16 +138,43 @@ namespace ZoboUI.Editor.Inspectors
 
             });
 
-            // This value changes when the data is first loaded from the data binding so its a good way to know when the data is loaded in the inspector
-            OutputUssFilePathTextField.RegisterValueChangedCallback(evt =>
+
+            // We check if the inspector's data is loaded and ready to be displayed. This is because the inputs and fields are sometimes empty before the data is loaded and we don't want the user to see an empty inspector
+            // Right now we check every second whether the utility section is loaded and it has the child foldouts for the utilities loaded
+            scheduledItem = myInspector.schedule.Execute(() =>
             {
-                // When the inspector's data is loaded, hide the loading label and show the inspector content. This prevents the user from seeing the empty inspector fields while the data is loading
-                if (loadedUxmlContent.style.visibility == Visibility.Hidden)
+                var propertyField = loadedUxmlContent.Q<PropertyField>("ConfigDisplayField");
+
+                string utilitySectionElementName = "UtilitiesSectionPropertyHolderListView";
+
+                if (propertyField != null)
                 {
-                    loadedUxmlContent.style.visibility = Visibility.Visible;
-                    loadingConfigLabel.style.display = DisplayStyle.None;
+
+                    var utilitySection = propertyField.Q<VisualElement>(utilitySectionElementName);
+
+                    if (utilitySection != null)
+                    {
+                        var foldouts = propertyField.Query<Foldout>().ToList();
+
+                        // When the inspector's data is loaded, hide the loading label and show the inspector content. This prevents the user from seeing the empty inspector fields while the data is loading
+                        // TODO: This is a bit hacky, and we should find a better way to do this
+                        if (foldouts != null && foldouts.Count > 0)
+                        {
+                            loadedUxmlContent.style.visibility = Visibility.Visible;
+                            loadingConfigLabel.style.display = DisplayStyle.None;
+
+                            // Cancel the task so it doesn't run again
+                            scheduledItem.Pause();
+                        }
+
+
+                    }
+
                 }
-            });
+
+            }).Every(1000);
+
+
 
             // Return the finished inspector UI
             return myInspector;
