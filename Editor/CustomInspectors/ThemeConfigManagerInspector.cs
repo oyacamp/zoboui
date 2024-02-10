@@ -1,11 +1,9 @@
-using System.IO;
 using ZoboUI.Core;
 using ZoboUI.Core.Utils;
 using UnityEditor;
-using UnityEngine;
 using UnityEngine.UIElements;
-using System;
 using UnityEditor.UIElements;
+using UnityEngine;
 
 namespace ZoboUI.Editor.Inspectors
 {
@@ -23,6 +21,8 @@ namespace ZoboUI.Editor.Inspectors
         private readonly string PurgeButtonName = "PurgeButton";
 
         private readonly string LogLevelEnumDropdownName = "LogLevelField";
+
+        private readonly string RefreshButtonName = "RefreshButton";
 
         private void ExportThemeConfigToJson()
         {
@@ -57,6 +57,27 @@ namespace ZoboUI.Editor.Inspectors
 
 
         }
+
+        private void Refresh()
+        {
+            if (target == null || target.GetType() != typeof(ThemeConfigManager))
+            {
+                return;
+            }
+
+            ThemeConfigManager themeConfigManager = (ThemeConfigManager)target;
+
+            ThemeConfigDisplayVersion configDisplayVersion = themeConfigManager.ThemeConfigDisplay;
+
+            configDisplayVersion.RequiredStringDropdownInfoInstance.NotifyModifierValuesUpdated();
+
+            Repaint();
+
+            themeConfigManager.Logger.LogProgress("Refreshed Theme Config");
+        }
+
+
+
         private IVisualElementScheduledItem scheduledItem;
 
         public override VisualElement CreateInspectorGUI()
@@ -125,6 +146,11 @@ namespace ZoboUI.Editor.Inspectors
             // Get the purge button from the UXML and assign it its click event
             Button purgeButton = myInspector.Q<Button>(PurgeButtonName);
             purgeButton.clickable.clicked += Purge;
+
+
+            // Get the refresh button from the UXML and assign it its click event
+            Button refreshButton = myInspector.Q<Button>(RefreshButtonName);
+            refreshButton.clickable.clicked += Refresh;
 
 
 

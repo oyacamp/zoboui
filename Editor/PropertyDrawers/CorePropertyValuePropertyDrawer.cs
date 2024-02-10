@@ -91,33 +91,7 @@ namespace ZoboUI.Editor.PropertyDrawers
             {
                 var element = container.Q(elementInfo.NameOfElementToHide);
 
-                if (currentValueType == CorePropertyValueType.ClassModifierDictionary)
-                {
-                    // Add a button that calls EditorUtility.SetDirty when clicked
-                    var button = new Button(() =>
-                    {
-                        EditorUtility.SetDirty(serializedProperty.serializedObject.targetObject);
-                        ThemeConfigManager themeConfigManager = serializedProperty.serializedObject.targetObject as ThemeConfigManager;
 
-
-                        ThemeConfigDisplayVersion configDisplayVersion = themeConfigManager.ThemeConfigDisplay;
-
-                        configDisplayVersion.RequiredStringDropdownInfoInstance.NotifyModifierValuesUpdated();
-                    });
-
-                    button.text = "Refresh Modifier Dropdowns";
-                    button.name = "refresh-modifiers-button";
-                    button.tooltip = "Refresh the list of modifiers in the dropdowns if you have added, removed, or updated modifiers";
-
-                    // Add a margin to the top
-                    button.style.marginTop = 5;
-                    button.style.marginBottom = 5;
-
-
-                    // Find the #unity-content element and add the button to it
-                    var unityContent = element.Q("unity-content");
-                    unityContent.Add(button);
-                }
 
                 string formattedPropertyName = propertyDisplayName;
 

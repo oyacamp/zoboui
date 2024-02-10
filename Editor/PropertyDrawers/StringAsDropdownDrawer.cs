@@ -19,13 +19,36 @@ namespace ZoboUI.Editor.PropertyDrawers
 
         protected ThemeConfigDisplayVersion GetThemeConfigDisplayVersion(SerializedProperty property)
         {
+            if (property == null)
+            {
+                return null;
+            }
 
-            ThemeConfigManager themeConfigManager = property.serializedObject.targetObject as ThemeConfigManager;
 
 
-            ThemeConfigDisplayVersion configDisplayVersion = themeConfigManager.ThemeConfigDisplay;
+            try
+            {
+                // If we try to get the target object of the property (even to check if it's null), it throws an exception:
+                //ArgumentNullException: Value cannot be null.
 
-            return configDisplayVersion;
+                // So we catch it and return null if it happens
+                var targetObj = property.serializedObject.targetObject;
+
+            }
+            catch (ArgumentNullException ex)
+            {
+                return null;
+            }
+
+            if (property.serializedObject.targetObject is ThemeConfigManager themeConfigManager)
+            {
+                ThemeConfigDisplayVersion configDisplayVersion = themeConfigManager.ThemeConfigDisplay;
+                return configDisplayVersion;
+            }
+            else
+            {
+                return null;
+            }
         }
 
 
@@ -153,6 +176,11 @@ namespace ZoboUI.Editor.PropertyDrawers
 
 
                 ThemeConfigDisplayVersion configDisplayVersion = this.GetThemeConfigDisplayVersion(property);
+
+                if (configDisplayVersion == null)
+                {
+                    return;
+                }
 
 
 
