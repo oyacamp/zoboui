@@ -96,6 +96,7 @@ namespace ZoboUI.Editor.PropertyDrawers
                     // Add a button that calls EditorUtility.SetDirty when clicked
                     var button = new Button(() =>
                     {
+
                         EditorUtility.SetDirty(serializedProperty.serializedObject.targetObject);
                         ThemeConfigManager themeConfigManager = serializedProperty.serializedObject.targetObject as ThemeConfigManager;
 

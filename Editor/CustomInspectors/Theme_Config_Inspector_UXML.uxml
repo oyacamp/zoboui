@@ -29,7 +29,10 @@
             <ui:EnumField label="Log Level" type="ZoboUI.Core.Utils.LogLevel, com.oyacamp.zoboui.editor" name="LogLevelField" binding-path="logLevel" />
         </ui:VisualElement>
         <ui:VisualElement name="ThemeSection" style="flex-grow: 1;">
-            <ui:Label tabindex="-1" text="Theme" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeLabel" class="themeconfig__section__heading" />
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-self: auto; align-items: center;">
+                <ui:Label tabindex="-1" text="Theme" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeLabel" class="themeconfig__section__heading" />
+                <ui:Button text="Refresh" parse-escape-sequences="true" display-tooltip-when-elided="true" tooltip="Use this to refresh the inspector, e.g. if you&apos;ve made changes to modifiers that show up in dropdowns." name="RefreshButton" style="margin-bottom: 15px;" />
+            </ui:VisualElement>
             <uie:PropertyField binding-path="themeConfigDisplay" name="ConfigDisplayField" />
         </ui:VisualElement>
     </ui:VisualElement>
