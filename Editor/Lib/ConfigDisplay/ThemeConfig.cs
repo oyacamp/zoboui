@@ -1306,6 +1306,53 @@ namespace ZoboUI.Core
 
         };
 
+        [Tooltip("Values for utility classes that control the source of an image component.")]
+        public UtilityConfigWithStringImageDictionary image = new UtilityConfigWithStringImageDictionary()
+        {
+            enabled = true,
+            modifierVariations = new StringListValue(){
+                "hover",
+            },
+            tagPropertyMap = new ClassTagToUssPropertyDictionary(){
+                { "image", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "--unity-image"} } }
+            },
+            data = new StringImageDictionary()
+            {
+            }
+
+        };
+
+        [Tooltip("Values for utilities controlling the image scaling in the image element's box.")]
+        public UtilityConfigWithStringDictionary imageScaleMode = new UtilityConfigWithStringDictionary()
+        {
+            enabled = true,
+            data = new KeyValueDictionary(){
+                { "stretch", new StringKeyValueHolder(){ value = "stretch-to-fill" } },
+                { "crop", new StringKeyValueHolder(){ value = "scale-and-crop" } },
+                { "fit", new StringKeyValueHolder(){ value = "scale-to-fit"} },
+            },
+            tagPropertyMap = new ClassTagToUssPropertyDictionary(){
+                { "image-scale", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "--unity-image-size"} } }
+            }
+
+        };
+
+        [Tooltip("Values for utilities controlling the image tint color of an element.")]
+        public UtilityConfigWithColorPalette imageTintColor = new UtilityConfigWithColorPalette()
+        {
+            enabled = true,
+            modifierVariations = new StringListValue(){
+                "hover",
+            },
+            extendFields = new StringListValue(){
+                PropertyFormatter.FormatPropertyExtensionName(nameof(BaseCoreProperties.colors), PropertyFormatter.PropertyExtensionContext.Core)
+            },
+            tagPropertyMap = new ClassTagToUssPropertyDictionary(){
+                { "image-tint", new ClassTagPropertyHolder(){ properties = new StringListValue(){ "--unity-image-tint-color" } } }
+            },
+            data = new ColorPaletteDictionary()
+        };
+
         [Tooltip("Values for utilities controlling the placement of positioned elements.")]
         public UtilityConfigWithStringDictionary inset = new UtilityConfigWithStringDictionary()
         {
