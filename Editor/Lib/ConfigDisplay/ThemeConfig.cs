@@ -2148,7 +2148,7 @@ namespace ZoboUI.Core
         /// <summary>
         /// The version of the themeconfig schema used to generate this theme.
         /// </summary>
-        public readonly string schemaVersion = "1.0.0";
+        public readonly string schemaVersion = "1.0.1";
 
 
         public static string ToJson(ThemeConfig config)

@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using UnityEngine;
+using System;
 
 namespace ZoboUI.Editor.Inspectors
 {
@@ -25,6 +26,10 @@ namespace ZoboUI.Editor.Inspectors
         private readonly string RefreshButtonName = "RefreshButton";
 
         private readonly string ResetConfigButtonName = "ResetConfigButton";
+
+        private readonly string UpdateRequiredSectionName = "UpdateRequiredSection";
+
+        private readonly string UpdateConfigButtonName = "UpdateConfigButton";
 
         private void ExportThemeConfigToJson()
         {
@@ -53,6 +58,7 @@ namespace ZoboUI.Editor.Inspectors
             EditorUtility.SetDirty(themeConfigManager);
 
             themeConfigManager.Logger.LogProgress("Reset Theme Config");
+            Repaint();
 
         }
 
@@ -91,8 +97,27 @@ namespace ZoboUI.Editor.Inspectors
         }
 
 
+        private bool ConfigSchemaUpdateIsRequired()
+        {
+            if (target == null || target.GetType() != typeof(ThemeConfigManager))
+            {
+                return false;
+            }
+
+            ThemeConfigManager themeConfigManager = (ThemeConfigManager)target;
+
+            ThemeConfigDisplayVersion configDisplayVersion = themeConfigManager.ThemeConfigDisplay;
+
+            ThemeConfig newConfig = new ThemeConfig();
+            // We need to check if the schema version of the new config is different from the schema version of the config display. If it is, we need to update the config display
+            return !String.Equals(newConfig.schemaVersion, configDisplayVersion.SchemaVersion, StringComparison.OrdinalIgnoreCase);
+        }
+
+
 
         private IVisualElementScheduledItem scheduledItem;
+
+        private VisualElement updateRequiredSection;
 
         public override VisualElement CreateInspectorGUI()
         {
@@ -170,6 +195,17 @@ namespace ZoboUI.Editor.Inspectors
             Button resetConfigButton = myInspector.Q<Button>(ResetConfigButtonName);
             resetConfigButton.clickable.clicked += ResetConfig;
 
+            updateRequiredSection = myInspector.Q<VisualElement>(UpdateRequiredSectionName);
+            updateRequiredSection.style.display = DisplayStyle.None;
+
+            // Get the update button from the UXML and assign it its click event
+            Button updateConfigButton = myInspector.Q<Button>(UpdateConfigButtonName);
+            updateConfigButton.clickable.clicked += UpdateConfigToLatestSchema;
+
+            if (ConfigSchemaUpdateIsRequired())
+            {
+                updateRequiredSection.style.display = DisplayStyle.Flex;
+            }
 
 
             // Get the log level enum dropdown from the UXML
@@ -224,6 +260,35 @@ namespace ZoboUI.Editor.Inspectors
             return myInspector;
         }
 
+        private void UpdateConfigToLatestSchema()
+        {
+
+            if (target == null || target.GetType() != typeof(ThemeConfigManager))
+            {
+                return;
+            }
+
+            ThemeConfigManager themeConfigManager = (ThemeConfigManager)target;
+
+
+            var currentThemeConfig = themeConfigManager.ThemeConfig;
+
+            var jsonifiedThemeConfig = ThemeConfig.ToJson(currentThemeConfig);
+
+            themeConfigManager.LoadThemeConfigDisplayFromJsonString(jsonifiedThemeConfig);
+
+            EditorUtility.SetDirty(themeConfigManager);
+
+            Repaint();
+
+            if (!ConfigSchemaUpdateIsRequired() && updateRequiredSection != null)
+            {
+                updateRequiredSection.style.display = DisplayStyle.None;
+            }
+
+            themeConfigManager.Logger.LogProgress("Updated Theme Config to latest schema version");
+
+        }
     }
 }
 
