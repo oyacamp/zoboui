@@ -1,6 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
     <Style src="project://database/Packages/com.oyacamp.zoboui/Editor/Theme_Config_Inspector_USS.uss?fileID=7433441132597879392&amp;guid=3d3a920e322b23d4eae19e24e2cb7615&amp;type=3#Theme_Config_Inspector_USS" />
     <ui:VisualElement name="VisualElement" style="flex-grow: 1; padding-top: 20px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px;">
+        <ui:VisualElement name="UpdateRequiredSection" style="flex-grow: 0; border-top-width: 1px; border-bottom-width: 1px; padding-top: 9px; padding-bottom: 9px; margin-bottom: 25px; border-left-color: rgba(185, 185, 185, 0.28); border-right-color: rgba(185, 185, 185, 0.28); border-top-color: rgba(185, 185, 185, 0.28); border-bottom-color: rgba(185, 185, 185, 0.28); flex-direction: row; justify-content: space-between; align-items: center;">
+            <ui:Label tabindex="-1" text="Looks like you&apos;re using an older version of the Theme Config. Update to the latest version to get any new utilities and fields." parse-escape-sequences="true" display-tooltip-when-elided="true" style="white-space: normal; padding-top: 10px; padding-bottom: 10px; max-width: 90%;" />
+            <ui:Button text="Update" parse-escape-sequences="true" display-tooltip-when-elided="true" name="UpdateConfigButton" />
+        </ui:VisualElement>
         <ui:VisualElement name="SettingsSection" style="margin-bottom: 62px;">
             <ui:Label tabindex="-1" text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="themeconfig__section__heading" />
             <ui:Foldout text="USS Generation" name="OutputSection" view-data-key="themeconfig-uss-output-section" class="themeconfig__settings__foldout">

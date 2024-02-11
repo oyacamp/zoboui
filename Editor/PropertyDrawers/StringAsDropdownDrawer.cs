@@ -35,7 +35,7 @@ namespace ZoboUI.Editor.PropertyDrawers
                 var targetObj = property.serializedObject.targetObject;
 
             }
-            catch (ArgumentNullException ex)
+            catch (ArgumentNullException)
             {
                 return null;
             }
