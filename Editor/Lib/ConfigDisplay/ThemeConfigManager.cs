@@ -290,13 +290,20 @@ namespace ZoboUI.Core
         {
             if (m_importThemeConfigJsonFile == null)
             {
-                Logger.LogWarning("No import file provided, using the default theme config instead");
-                LoadDefaultThemeConfig();
+                Logger.LogError("No import file provided.");
                 return;
             }
 
             var json = m_importThemeConfigJsonFile.text;
             LoadThemeConfigDisplayFromJsonString(json);
+        }
+
+        /// <summary>
+        /// Resets the theme config to the default theme config.
+        /// </summary>
+        public void ResetThemeConfig()
+        {
+            LoadDefaultThemeConfig();
         }
 
         /// <summary>
