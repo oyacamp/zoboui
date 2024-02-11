@@ -17,6 +17,7 @@
                 <ui:VisualElement style="flex-grow: 1;">
                     <uie:ObjectField label="JSON  File" binding-path="m_importThemeConfigJsonFile" allow-scene-objects="false" type="UnityEngine.TextAsset, UnityEngine.CoreModule" name="ImportJsonFileField" />
                     <ui:Button text="Import Config" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ImportConfigButton" style="margin-top: 8px;" />
+                    <ui:Button text="Reset" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ResetConfigButton" tooltip="Resets the theme config to the default one." class="themeconfig__button__secondary" style="margin-top: 8px;" />
                     <ui:Label tabindex="-1" text="&lt;b&gt;WARNING&lt;/b&gt;: this will overwrite your current config!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 146, 146); -unity-text-align: upper-center; margin-top: 8px;" />
                 </ui:VisualElement>
             </ui:Foldout>

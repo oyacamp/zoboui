@@ -24,6 +24,8 @@ namespace ZoboUI.Editor.Inspectors
 
         private readonly string RefreshButtonName = "RefreshButton";
 
+        private readonly string ResetConfigButtonName = "ResetConfigButton";
+
         private void ExportThemeConfigToJson()
         {
             ThemeConfigManager themeConfigManager = (ThemeConfigManager)target;
@@ -39,6 +41,18 @@ namespace ZoboUI.Editor.Inspectors
             themeConfigManager.ImportThemeConfigFromJson();
 
             EditorUtility.SetDirty(themeConfigManager);
+
+        }
+
+        private void ResetConfig()
+        {
+            ThemeConfigManager themeConfigManager = (ThemeConfigManager)target;
+
+            themeConfigManager.ResetThemeConfig();
+
+            EditorUtility.SetDirty(themeConfigManager);
+
+            themeConfigManager.Logger.LogProgress("Reset Theme Config");
 
         }
 
@@ -151,6 +165,10 @@ namespace ZoboUI.Editor.Inspectors
             // Get the refresh button from the UXML and assign it its click event
             Button refreshButton = myInspector.Q<Button>(RefreshButtonName);
             refreshButton.clickable.clicked += Refresh;
+
+            // Get the reset button from the UXML and assign it its click event
+            Button resetConfigButton = myInspector.Q<Button>(ResetConfigButtonName);
+            resetConfigButton.clickable.clicked += ResetConfig;
 
 
 
